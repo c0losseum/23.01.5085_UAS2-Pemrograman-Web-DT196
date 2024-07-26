@@ -1,0 +1,312 @@
+/* HEAD */
+.bg-icon{
+    background: #fff;
+    width: 20%;
+    height: 70px;
+}
+.iconpoint {
+    padding-left: 10px;
+    width: 225px;
+    padding-top: 0;
+}
+
+.head-tambah{
+    margin-right: 0;
+    width: 80%;
+    height: 70px;
+    background: #ba03fc;
+    font-family: 'patuaone';
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.d-flex {
+    display: flex !important
+}
+
+.bg-gradhead {
+    background: #ba03fc;
+
+}
+
+
+/* BODY */
+.kolom-kiri {
+    margin-left: 0;
+    background: #fff;
+    width: 20%;
+    height: 1024px;
+    
+}
+
+.kolom-kanan {
+    margin-right: 0;
+    background: #e8e8e8;
+    width: 80%;
+    height: 1024px;
+   
+
+}
+
+/* INSIDE KOLOM KIRI */
+.img-conf{
+    width: 45%;
+}
+
+.pic-dash{
+    width: 45px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.pic-tambah{
+    width: 29px;
+    height: 30px;
+    padding-right: 17px;
+    padding-left: 10px;
+    padding-top: 0.9rem;
+}
+
+.pilih-tambah{
+    background: #ba03fc;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+}
+
+.pic-rekap{
+    width: 28px;
+    height: 33px;
+    padding-right: 19px;
+    padding-left: 10px;
+    padding-top: 0.8rem;
+}
+
+.pic-editp{
+    width: 33px;
+    height: 35px;
+    padding-right: 15.5px;
+    padding-left: 10px;
+    padding-top: 0.8rem;
+}
+
+.pic-keluar{
+    width: 30px;
+    height: 33px;
+    padding-right: 17px;
+    padding-left: 13px;
+    padding-top: 0.8rem;
+}
+
+.menu{
+    font-family: 'fontpatua';
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+/* INSIDE KOLOM KANAN */
+.kol-atas {
+    background: #fff;
+    width: 75%;
+    height: 450px;
+    margin: 1.8rem;
+    border-radius: 15px;
+    justify-content: center;
+    position: absolute;
+}
+
+.kol-upload {
+    height: 400px;
+    width: 400px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.kol-jenis {
+    height: 400px;
+    width: 200px;
+    
+    margin-top: 1.5rem;
+}
+
+.kol-kelas {
+    height: 400px;
+    width: 300px;
+   
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.con-tujuan-file{
+    border: 2px solid #000;
+    border-radius: 15px;
+    height: 300px;
+    width: 250px;
+    margin-bottom: 0;
+    position: absolute;
+    overflow: scroll;
+    letter-spacing: 0px;
+    word-spacing: normal;
+
+}
+
+.kol-bawah {
+    position: relative;
+    
+}
+
+
+/* LAIN-LAIN */
+@font-face {
+    font-family: 'fontpatua';
+    src: url('PatuaOne-Regular.ttf')
+}
+
+@font-face {
+    font-family: "fontpeddana";
+    src: url('Peddana-Regular.ttf');
+}
+
+.fontpta1 {
+    font-family: 'fontpatua';
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.fontpta1 {
+    font-family: 'fontpatua';
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.logo-in-cloud-upload {
+    opacity: 40%;
+    width: 150px;
+    opacity: 50%;
+    padding-top: 8rem;
+    padding-left: 7.8rem;
+}
+
+.teks-in-cloud-upload {
+    opacity: 50%;
+    padding-left: 4.5rem;
+}
+
+.pic-add-content{
+    width: 23px;
+    height: 20px;
+    padding-right: 0.3rem;
+}
+
+.bg-add-content{
+    height: 30px;
+    width: 95px;
+    padding-left: 0.3rem;
+    background: #ffd02b;
+    border: 2px solid #000;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.bg-jenis{
+    background: #ffd02b;
+    height: 40px;
+    width: 125px;
+    margin-top: 0;
+    padding-top: 0.25rem;
+    padding-left: 1rem;
+    border-radius: 15px;
+    font-family: 'fontpatua';
+    font-weight: normal;
+}
+
+.bg-kelas{
+    background: #ffd02b;
+    height: 40px;
+    width: 125px;
+    margin-top: 0;
+    padding-top: 0.25rem;
+    padding-left: 1rem;
+    border-radius: 15px;
+    font-family: 'fontpatua';
+    font-weight: normal;
+}
+
+.pd-add-content{
+    padding-left: 11.35rem;
+    padding-top: 0.15rem;
+    gap: 0.5rem;
+}
+
+.btm-upload{
+    background-color: #ba03fc;
+    font-family: 'fontpatua';
+    font-size: 30px;
+    border-radius: 15px;
+    color: #fff;
+    justify-content: center;
+    margin-left: 2px;
+    border: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.lgn-center{
+    align-items: center;
+}
+
+.bd-clist{
+    box-shadow: inset 0 0 0 2px black;
+    margin-right: 1rem;
+}
+
+.set-lainlain{
+    margin-left: 0.5rem;
+    opacity: 45%;
+}
+
+.set-jenisfile-lain{
+    margin-top: -1rem;
+}
+
+.ml1{
+    margin-left: 2.5rem;
+}
+
+.ml2{
+    margin-left: 4rem;
+}
+
+.ml3{
+    margin-left: 2rem;
+}
+
+.tengah-kabeh{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.m-0{
+    margin: 0;
+}
+
+.mg-paten{
+    margin-bottom: -2rem;
+    padding: 0;
+}

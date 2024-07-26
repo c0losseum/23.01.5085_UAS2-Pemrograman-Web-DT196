@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="bootstrapdash.css">
+</head>
+
+<body>
+    <div class="nav bg-menu">
+        <img src="pic8/logomenuatas.png" class="mt-2 mb-2" width="250px" height="auto">
+        <!--p>Dashboard</p-->
+    </div>
+    <div class="d-flex">
+        <div class="row-kiri fontpeddana3 tengah">
+            <img src="pic8/profil.png" width="125px" class="mt-5">
+            <p>Nama Lengkap</p>
+            <p>23.01.5085</p>
+            <div class="statusaktif bg-green d-inline-flex text-white rounded-pill">
+                <img src="pic8/status.png" class="ms-2 mt-status" width="25px" height="25px">
+                <p class="ms-2 mt-status">Aktif</p>
+            </div>
+
+            <div class="fontpeddana3">
+                <div class="sideklik d-flex ms-2 my-3 ">
+                    <img src="pic8/dashboard.png" width="18%">
+                    <a href="dashboard.html" onclick="openTab(event, 'dashboard')"
+                ><h5 class="mt-3 ms-3">Dashboard</h5></a>
+                </div>
+                <div class="d-flex ms-3 my-3">
+                    <img src="pic8/tambahdata.png" width="35px" height="35px">
+                    <a href="tambahdata.html" onclick="openTab(event, 'dashboard')"
+                ><h5 class="mt-2 ms-3-5">Tambah Data</h5></a>
+                </div>
+                <div class="d-flex ms-3 my-3">
+                    <img src="pic8/rekapitulasin.png" width="28px" height="35px">
+                    <a href="rekapitulasi.html" onclick="openTab(event, 'dashboard')"
+                ><h5 class="mt-2 ms-4">Rekapitulasi Nilai</h5></a>
+                </div>
+                <div class="d-flex ms-3 my-3">
+                    <img src="pic8/editprofile.png" width="33px" height="35px">
+                    <a href="editprofile.html" onclick="openTab(event, 'dashboard')"
+                ><h5 class="mt-2 ms-3">Edit Profile</h5></a>
+
+                </div>
+                <div class="d-flex ms-3 my-3">
+                    <img src="pic8/keluar.png" width="35px" height="35px">
+                    <h5 class="mt-2 ms-3">Keluar</h5>
+                </div>
+            </div>
+
+        </div>
+        <div class="row-kanan">
+            <img src="pic8/logojumbo.png" width="55%" class="fadeopct ms-logjum mt-logjum">
+        </div>
+        <div class="row-kanan ms-kanan bg-transparent position-absolute">
+            <div class="summary-section ms-5">
+                <div class="#">
+                    <div class="kotak-kiri-atas  fontpatua-judulbox ">
+                        <h3 class="fontpatua-judulbox bg-warning ">Jam</h3>
+                        <p class="fontpeddanajam">12:34:56</p>
+                    </div>
+                    <div class="kotak-kiri-bawah fontpatua-judulbox">
+                        <h3 class="bg-warning fontpatua-judulbox">QR Anda</h3>
+                        <img src="pic8/qrcode.png" width="65%">
+                    </div>
+                </div>
+                <div class="kotak-tengah p-0 ">
+
+                    <h3 class="bg-warning fontpatua-judulbox">Agenda hari ini</h3>
+                    <table class="w-100">
+                        <thead class="cstmtable fontpeddana3">
+                            <tr>
+                                <th>No</th>
+                                <th>Waktu</th>
+                                <th>Mata Kuliah</th>
+                                <th>Kelas</th>
+                            </tr>
+                        </thead>
+                        <tbody class="fontpeddana2">
+                            <tr class="cstmgawah-jadwal">
+                                <td>1</td>
+                                <td>08:50<br>s/d<br>10:20</td>
+                                <td>Web<br>Programming</td>
+                                <td>5.2.1</td>
+                            </tr>
+                            <tr class="cstmgawah-jadwal">
+                                <td>2.</td>
+                                <td>10:30<br>s/d<br>11:40</td>
+                                <td>Web<br>Programming</td>
+                                <td>5.4.6</td>
+                            </tr>
+                            <tr class="cstmgawah-jadwal">
+                                <td>3.</td>
+                                <td>13:20<br>s/d<br>15:00</td>
+                                <td>UI / UX<br>Design</td>
+                                <td>7.4.2</td>
+                            </tr>
+                            <tr class="cstmgawah-jadwal">
+                                <td>4.</td>
+                                <td>08:50<br>s/d<br>23:00</td>
+                                <td>Web<br>Programming</td>
+                                <td>7.4.1</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="kotak-kanan p-0">
+                    <h3 class="bg-warning fontpatua-judulbox">Lain-lain</h3>
+                    <button class="buttonlain fontpeddana3">Presensi Dosen</button><br>
+                    <button class="buttonlain fontpeddana3">Presensi Mahasiswa</button><br>
+                    <button class="buttonlain fontpeddana3">Materi</button>
+                </div>
+
+            </div>
+            <div class="ms-5">
+                <div class="kotak-bawah p-0">
+                    <h3 class="bg-warning fontpatua-judulbox">Jadwal Mengajar</h3>
+
+                    <table class="w-100">
+                        <thead class="cstmtable fontpeddana3">
+                            <tr>
+                                <th>No</th>
+                                <th>Hari</th>
+                                <th>Waktu</th>
+                                <th>Mata Kuliah</th>
+                                <th>Kelas</th>
+                                <th>Jenis Pengajaran</th>
+                            </tr>
+                        </thead>
+                        <tbody class="fontpeddana2">
+                            
+                                <tr class="cstmbawah-jadwal fontpeddana3 my-5">
+                                    <td>1.</td>
+                                    <td>Senin</td>
+                                    <td>08:50 s/d 10:20</td>
+                                    <td>Web Programming</td>
+                                    <td>5.2.1</td>
+                                    <td>Teori</td>
+                                </tr>                            
+                                <tr class="cstmbawah-jadwal fontpeddana3">
+                                    <td>2.</td>
+                                    <td>Senin</td>
+                                    <td>10:30 s/d 11:40</td>
+                                    <td>Web Programming</td>
+                                    <td>5.4.6</td>
+                                    <td>Teori</td>
+                                </tr>
+                            
+                            <tr class="cstmbawah-jadwal fontpeddana3 ">
+                                <td>3.</td>
+                                <td>Senin</td>
+                                <td>13:20 s/d 15:00</td>
+                                <td>UI / UX Design</td>
+                                <td>7.4.2</td>
+                                <td>Praktikum</td>
+                            </tr>
+                            <tr class="cstmbawah-jadwal fontpeddana3">
+                                <td>4.</td>
+                                <td>Selasa</td>
+                                <td>08:50 s/d 23:00</td>
+                                <td>Web Programming</td>
+                                <td>5.2.3</td>
+                                <td>Teori</td>
+                            </tr>
+                            <tr class="fontpeddana3">
+                                <td>5.</td>
+                                <td>Selasa</td>
+                                <td>15:30 s/d 17:00</td>
+                                <td>Web Programming</td>
+                                <td>7.4.1</td>
+                                <td>Praktikum</td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+
+</html>

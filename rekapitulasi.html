@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Peddana&family=Patua+One&display=swap" />
+  <title>Rekapitulasi</title>
+  <link rel="stylesheet" href="stylerekap.css" />
+</head>
+
+<body>
+  <div class="">
+    <section class="nav">
+      <div class="logo-nav">
+        <img src="pic10/logonav.png" class="logo-nav-set" />
+      </div>
+
+      <div class="judul-nav">
+        <p class="text-judul-nav">Rekapitulasi Nilai</p>
+      </div>
+    </section>
+
+    <section class="core">
+      <div class="sidebar">
+
+        
+
+
+      <ul>
+        <li>
+          <a href="dashboard.html" onclick="openTab(event, 'dashboard')"><img src="pic10/dashboard.png"
+              class="pic-dash" />Dashboard</a>
+        </li>
+        <li>
+          <a href="tambahdata.html" onclick="openTab(event, 'tambahdata')"><img src="pic10/tambah.png"
+              class="pic-tambah" />Tambah Data</a>
+        </li>
+        <li>
+          <a href="rekapitulasi.html" onclick="openTab(event, 'rekapitulasi')"><img src="pic10/rekap.png"
+              class="pic-rekap" />Rekapitulasi
+            Nilai</a>
+        </li>
+        <li>
+          <a href="editprofil.html" onclick="openTab(event, 'editprofil')"><img src="pic10/editp.png"
+              class="pic-editp" />Edit Profil</a>
+        </li>
+        <li>
+          <a href="login.html" onclick="openTab(event, 'keluar')"><img src="pic10/keluar.png"
+              class="pic-keluar" />Keluar</a>
+        </li>
+      </ul>
+  </div>
+  <div class="bgc">
+    <div class="isi-kerap">
+      <div class="head-rekap">
+        <div class="fltrtgh">
+          <table class="filter">
+            <thead class="con_thfilter">
+              <th class="">Semester</th>
+              <th>Tahun Ajaran</th>
+              <th>Fakultas</th>
+              <th>Program Studi</th>
+              <th>Kelas</th>
+            </thead>
+            <tbody class="con_tbfilter">
+              <td>
+                <select id="myDropdown">
+                  <option value="option2">Ganjil</option>
+                  <option value="option3">Genap</option>
+                </select>
+              </td>
+              <td>
+                <select id="myDropdown">
+                  <option value="option1">2018 / 2019</option>
+                  <option value="option2">2019 / 2020</option>
+                  <option value="option3">2020 / 2021</option>
+                  <option value="option4">2021 / 2022</option>
+                  <option value="option5">2022 / 2023</option>
+                  <option value="option6">2023 / 2024</option>
+                  <option value="option7">2024 / 2025</option>
+                </select>
+              </td>
+              <td>
+                <select id="myDropdown">
+                  <option value="option1">Ilmu Komputer</option>
+                  <option value="option2">Ilmu Komunikasi</option>
+                  <option value="option3">Ekomomi & Sosial</option>
+                  <option value="option4">Sains & Teknologi</option>
+                </select>
+              </td>
+              <td>
+                <select id="myDropdown">
+                  <option value="option1">D3 Teknik Informatika</option>
+                  <option value="option2">D3 Manajemen Informatika</option>
+                  <option value="option3">S1 Teknik Komputer</option>
+                  <option value="option4">S1 Informatika</option>
+                  <option value="option4">S1 Sistem Informasi</option>
+                </select>
+              </td>
+              <td>
+                <select id="myDropdown">
+                  <option value="option1">23-D3TI03</option>
+                  <option value="option2">23-D3TI02</option>
+                  <option value="option3">23-D3TI01</option>
+                  <option value="option4">22-D3TI03</option>
+                  <option value="option5">22-D3TI02</option>
+                  <option value="option6">22-D3TI01</option>
+                  <option value="option7">21-D3TI03</option>
+                </select>
+              </td>
+            </tbody>
+          </table>
+          <div class="edit-rekap">
+            <p class="font-editrekap">Edit Nilai</p>
+          </div>
+        </div>
+      </div>
+      <div class="search-bar">
+        <img src="pic10/search-icon.png" width="20px" height="20px" class="setsrcicon" />
+        <input type="tel" class="border0" placeholder="Cari Nama / NIM" />
+      </div>
+      <div class="result-rekap">
+
+        <div class="table-kiri">
+          <div class="table-header">
+            <div class="cell">No</div>
+            <div class="cell">NIM</div>
+            <div class="cell">N A M A</div>
+          </div>
+          <div class="table-content">
+            <div class="row">
+              <div class="cell">1. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+            <div class="row">
+              <div class="cell">2. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+            <div class="row">
+              <div class="cell">3. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+            <div class="row">
+              <div class="cell">4. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+            <div class="row">
+              <div class="cell">5. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+            <div class="row">
+              <div class="cell">6. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+            <div class="row">
+              <div class="cell">7. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+            <div class="row">
+              <div class="cell">8. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+            <div class="row">
+              <div class="cell">9. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+            <div class="row">
+              <div class="cell">10. </div>
+              <div class="cell">23.01.5085</div>
+              <div class="cell">Frumentios David</div>
+            </div>
+          </div>
+        </div>
+        <div class="table-container">
+          <div class="table-header">
+            <div class="cell">Pertemuan 1</div>
+            <div class="cell">Pertemuan 2</div>
+            <div class="cell">Pertemuan 3</div>
+            <div class="cell">Pertemuan 4</div>
+            <div class="cell">Pertemuan 5</div>
+            <div class="cell">Pertemuan 6</div>
+            <div class="cell">Pertemuan 7</div>
+            <div class="cell">Pertemuan 8</div>
+            <div class="cell">Pertemuan 9</div>
+            <div class="cell">Pertemuan 10</div>
+            <div class="cell">Pertemuan 11</div>
+            <div class="cell">Pertemuan 12</div>
+            <div class="cell">Pertemuan 13</div>
+            <div class="cell">Responsi 1</div>
+            <div class="cell">Responsi 2</div>
+            <div class="cell">UTS</div>
+            <div class="cell">UAS</div>
+            <div class="cell">Remidi</div>
+          </div>
+          <div class="table-content">
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+              <div class="cell">78</div>
+              <div class="cell">90</div>
+              <div class="cell">88</div>
+              <div class="cell">80</div>
+              <div class="cell">97</div>
+              <div class="cell">87</div>
+              <div class="cell">76</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">99</div>
+              <div class="cell">-</div>
+            </div>
+          </div>
+        </div>
+        <div class="table-kanan">
+          <div class="table-header">
+            <div class="cell">Rata-rata</div>
+          </div>
+          <div class="table-content">
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+            <div class="row">
+              <div class="cell">90</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  </div>
+</body>
+
+</html>
+
+<!--div>
+#.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+<div class="content">
+  <div id="dashboard" class="tab-content">
+      <h2>Tab 1 Content</h2>
+      <p>This is the content of Tab 1.</p>
+  </div>
+  <div id="tambahdata" class="tab-content">
+      <h2>Tab 2 Content</h2>
+      <p>This is the content of Tab 2.</p>
+  </div>
+  <div id="rekapitulasi" class="tab-content">
+      <h2>Tab 3 Content</h2>
+      <p>This is the content of Tab 3.</p>
+  </div>
+  <div id="editprofil" class="tab-content">
+    <h2>Tab 2 Content</h2>
+    <p>This is the content of Tab 2.</p>
+</div>
+<div id="keluar" class="tab-content">
+    <h2>Tab 3 Content</h2>
+    <p>This is the content of Tab 3.</p>
+</div>
+</div>
+</div-->
